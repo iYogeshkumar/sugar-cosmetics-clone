@@ -39,7 +39,7 @@ export const Products = () =>
     const getData = async () => {
       try {
         const res = await axios.get(
-          `https://sugarcosmeticsclone.herokuapp.com/product/${main}/${category}`,
+          `http://localhost:8080/product/${main}/${category}`,
         )
         const data = await res.data
         setData(data)
@@ -53,7 +53,7 @@ export const Products = () =>
 
     const getMainData = async () => {
       try {
-        const res = await axios.get(`https://sugarcosmeticsclone.herokuapp.com/product/${main}`)
+        const res = await axios.get(`http://localhost:8080/product/${main}`)
         const data = await res.data
         setData(data)
         console.log('data: ', data)

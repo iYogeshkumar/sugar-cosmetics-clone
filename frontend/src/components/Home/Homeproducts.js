@@ -22,7 +22,7 @@ export default function Products({ arr, type }) {
   const addToCart = async (prod) => {
     try {
       const res = await axios.post(
-        `https://sugarcosmeticsclone.herokuapp.com/cart/${user._id}`,
+        `http://localhost:8080/cart/${user._id}`,
         prod,
       )
       const data = await res.data

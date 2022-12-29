@@ -27,7 +27,7 @@ export const ProductsDetail = ({ allData, data }) => {
   const getData = async () => {
     axios
       .get(
-        `https://sugarcosmeticsclone.herokuapp.com/product/${main}/${category}/${id}`,
+        `http://localhost:8080/product/${main}/${category}/${id}`,
       )
       .then(function (response) {
         // console.log("response.data[0]:", response.data[0]);
@@ -38,7 +38,7 @@ export const ProductsDetail = ({ allData, data }) => {
       })
 
     axios
-      .get(`https://sugarcosmeticsclone.herokuapp.com/product`)
+      .get(`http://localhost:8080/product`)
       .then(function (response) {
         // console.log("response.data:", response.data);
         setAlldata(response.data)
@@ -61,7 +61,7 @@ export const ProductsDetail = ({ allData, data }) => {
   const addToCart = async () => {
     try {
       const res = await axios.post(
-        `https://sugarcosmeticsclone.herokuapp.com/cart/${user._id}`,
+        `http://localhost:8080/cart/${user._id}`,
         prod,
       )
       const data = await res.data
