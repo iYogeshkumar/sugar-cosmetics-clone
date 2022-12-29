@@ -38,7 +38,7 @@ const MainProducts = () =>
         // const getData = async () => {
         //     try {
         //         const res = await axios.get(
-        //             `http://localhost:8080/product/${main}/${category}`
+        //             `https://joyous-veil-colt.cyclic.app/product/${main}/${category}`
         //         );
         //         const data = await res.data;
         //         setData(data);
@@ -51,7 +51,7 @@ const MainProducts = () =>
         const getMainData = async () => {
             try {
                 const res = await axios.get(
-                    `http://localhost:8080/product/${main}`
+                    `https://joyous-veil-colt.cyclic.app/product/${main}`
                 );
                 const data = await res.data;
                 setData(data);
