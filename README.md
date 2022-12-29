@@ -17,7 +17,7 @@ Blog : https://medium.com/@abhinav805/sugarcosmetics-com-clone-cdc72b195678
 
 Github ripository : https://github.com/abhinavBisht94/sugar-cosmetics-clone
 
-Hosted website (Vercel) :  https://sugar-cosmetics-clone-sand.vercel.app/
+Hosted website (Vercel) :  https://sugar-cosmetics-clone-one.vercel.app/
 </p>
 
 ### `Tech Stack`
